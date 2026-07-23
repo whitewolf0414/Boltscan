@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "boltscan"
+version = "1.0.0"
+description = "A fast, nmap-inspired Python CLI port scanner with real-time Rich UI"
+authors = [
+    {name = "whitewolf0414", email = "mechanic0414@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+keywords = ["port-scanner", "network", "security", "cli", "nmap"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+    "Topic :: System :: Networking",
+    "Topic :: Security",
+]
+dependencies = [
+    "rich>=13.0.0",
+    "pyfiglet"
+]
+
+[project.optional-dependencies]
+syn = ["scapy"]
+
+[project.urls]
+"Homepage" = "https://github.com/whitewolf0414"
+"Source" = "https://github.com/whitewolf0414"
+
+[project.scripts]
+boltscan = "boltscan.cli:main"
+bscan = "boltscan.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
