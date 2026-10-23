@@ -68,11 +68,11 @@ Examples:
     parser.add_argument("-th", "--threads", type=int, metavar="N",
                         help="Override thread count from timing template")
     parser.add_argument("--timeout", type=float, metavar="SEC",
-                        help="Per-connection timeout in seconds")
+                        help="Per-connection socket timeout in seconds (default: adaptive based on thread count)")
     parser.add_argument("-b", "--banner", action="store_true",
                         help="Enable banner grabbing on open ports")
     parser.add_argument("--script", metavar="NAME|PATH",
-                        help='Preset ("banner", "http-title") or path to custom script')
+                        help="Preset ('banner', 'http-title') or path to custom script (.py, .js, .lua, .rs)")
     parser.add_argument("-sV", "--service-version", action="store_true", dest="service_version",
                         help="Probe open ports for service version info")
     parser.add_argument("-o", "--export-md", metavar="PATH",

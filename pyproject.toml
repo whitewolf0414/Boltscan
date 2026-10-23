@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "boltscan"
-version = "1.0.0"
+version = "1.0.1"
 description = "A fast, nmap-inspired Python CLI port scanner with real-time Rich UI"
 authors = [{name = "whitewolf0414"}]
 readme = "README.md"
