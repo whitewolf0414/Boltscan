@@ -6,9 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "boltscan"
 version = "1.0.0"
 description = "A fast, nmap-inspired Python CLI port scanner with real-time Rich UI"
-authors = [
-    {name = "whitewolf0414", email = "mechanic0414@gmail.com"}
-]
+authors = [{name = "whitewolf0414"}]
 readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "Apache-2.0"}
@@ -30,8 +28,10 @@ dependencies = [
 syn = ["scapy"]
 
 [project.urls]
-"Homepage" = "https://github.com/whitewolf0414"
-"Source" = "https://github.com/whitewolf0414"
+Homepage = "https://github.com/whitewolf0414/Boltscan"
+Source = "https://github.com/whitewolf0414/Boltscan"
+Issues = "https://github.com/whitewolf0414/Boltscan/issues"
+Author = "https://github.com/whitewolf0414"
 
 [project.scripts]
 boltscan = "boltscan.cli:main"
